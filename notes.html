@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lan="en">
+    <head>
+        <title>My Notes</title>
+    </head>
     <body>
     <p>Welcome to my notes from the <b>Intro to Programming</b> course.</p>
     <p>HTML is Hypertext Markdown Language that is used to write the webpages. It is used 
@@ -9,7 +12,7 @@
     like images and videos.</p>
     <p>There are different types of elements in HTML. The first type is called a void or empty element.
         A <mark>void</mark> element doesn't have a content, so it doesn't have a closing tag. 
-        Examples of the void element are <br> and <img>.
+        Examples of the void element are brake element and image element.
     </p>
     <h1>Inline vs block elements</h1>
     <h2>Inline elements</h2>
@@ -59,5 +62,31 @@
             <li>Cleaning the bathroom</li>
             <li>Cleaning the hallway</li>
         </ol>
-    </body>
+        <p>List element doesn't require a closing tag, but both ordered and unordered lists, do</p>
+    <h2>Web Address</h2>
+    <p>Every page, a file, an image on the web has its address. They are called URLs (Uniform Resource Locators). They usually startwith http:// or https:// 
+    Sometimes you can take shortcust and skip htttp/s and it will work just fine in the browser as the browser will know
+    you're looking for a website. But, if putting that address in the html file, you need to put absolute or fully qualified address 
+    (with the http/s at the beginning because otherwise the browser will think you are referring to a file on your own computer). 
+    http/https/file are called protocols, then goes:// and the domain (e.g.www.google.com). The domain tells the browser what server to connect to. 
+    Example: https://www.google.com/ (after the last / is a file path - sometimes empty, when it refers to the home page)
+    Example of the address of a file saved on a local computer:
+    file://users/kasia/notes.html (no domain name, but it would go before users)
+    </p>
+    <h2>Links and Images</h2>
+    <h3>Links</h3>
+    <p>An element for creating a link is called a and it is called anchor elelment (because it anchors/connects an address to a piece of text on a page.</p>
+    <a href="https://google.com" target="_blank">Google</a>
+    <h3>Images</h3>
+    <p>Tag for an image is img. It has to have a src and alt atribute (falterante description, or search engines or visually impaired people
+        to know what it is in the picture.
+        Here is an example of an image:
+        <img src="https://placebear.com/800/600" alt="image of a bear">
+        <p>To create an image that is also a link to a different page, we need to put image tag between
+            the beginning and the closing tags of the a element. 
+            Example: 
+            <a href="https://google.com"><img src="glogo.png" alt="Google!" target="_blank"></a>
+        </p>
+    </p>
+</body>
 </html>
